@@ -13,7 +13,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
 
   create_table "case_images", :force => true do |t|
     t.integer  "case_id"
-    t.integer  "published",          :default => 0
+    t.integer  "published"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -27,8 +27,8 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
   create_table "cases", :force => true do |t|
     t.string   "title"
     t.string   "sumary"
-    t.string   "body"
-    t.integer  "published",          :default => 0
+    t.text     "body"
+    t.integer  "published"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -38,9 +38,9 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
   end
 
   create_table "categories", :force => true do |t|
-    t.integer  "section_id"
+    t.integer  "category_id"
     t.string   "title"
-    t.integer  "published",  :default => 0
+    t.integer  "published"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
     t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "published",          :default => 0
+    t.integer  "published"
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"
@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
   create_table "event_galleries", :force => true do |t|
     t.integer  "event_id"
     t.string   "title"
-    t.integer  "published",          :default => 0
+    t.integer  "published"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -79,7 +79,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.integer  "published",          :default => 0
+    t.integer  "published"
   end
 
   create_table "events", :force => true do |t|
@@ -87,7 +87,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
     t.string   "description"
     t.datetime "date_start"
     t.datetime "date_end"
-    t.integer  "published",          :default => 0
+    t.integer  "published"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -99,7 +99,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
   create_table "headers", :force => true do |t|
     t.string   "title"
     t.integer  "dynamic_page_id"
-    t.integer  "published",          :default => 0
+    t.integer  "published"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -111,6 +111,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
   create_table "highlights", :force => true do |t|
     t.string   "title"
     t.string   "link"
+    t.integer  "position"
     t.integer  "order"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -118,7 +119,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.integer  "published",          :default => 0
+    t.integer  "published"
   end
 
   create_table "newsletters", :force => true do |t|
@@ -130,7 +131,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
   create_table "notice_images", :force => true do |t|
     t.string   "title"
     t.string   "legend"
-    t.integer  "published",          :default => 0
+    t.integer  "published"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -144,7 +145,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
     t.string   "title"
     t.text     "body"
     t.string   "summary"
-    t.integer  "published",          :default => 0
+    t.integer  "published"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -157,7 +158,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
     t.integer  "product_id"
     t.string   "title"
     t.string   "legend"
-    t.integer  "published",          :default => 0
+    t.integer  "published"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -169,7 +170,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
   create_table "products", :force => true do |t|
     t.integer  "category_id"
     t.string   "title"
-    t.integer  "published",          :default => 0
+    t.integer  "published"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "description"
@@ -210,7 +211,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
 
   create_table "sections", :force => true do |t|
     t.string   "title"
-    t.integer  "published",  :default => 0
+    t.integer  "published"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

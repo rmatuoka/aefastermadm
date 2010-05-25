@@ -87,10 +87,6 @@ $(document).ready(function(){
 			<li class="MenuItem Visitas">
 				<a href="<%=admin_schedule_visits_path%>">visitas</a>
 			</li>
-			
-			<li class="MenuItem Usuarios">
-				<a href="<%=admin_partners_path%>">parceiros</a>
-			</li>
 
 		</div>
 	

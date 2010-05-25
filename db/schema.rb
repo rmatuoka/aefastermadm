@@ -9,11 +9,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100512010612) do
+ActiveRecord::Schema.define(:version => 20100525032143) do
 
   create_table "case_images", :force => true do |t|
     t.integer  "case_id"
-    t.integer  "published"
+    t.integer  "published",          :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
     t.string   "title"
     t.string   "sumary"
     t.text     "body"
-    t.integer  "published"
+    t.integer  "published",          :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -38,9 +38,9 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
   end
 
   create_table "categories", :force => true do |t|
-    t.integer  "category_id"
+    t.integer  "section_id"
     t.string   "title"
-    t.integer  "published"
+    t.integer  "published",  :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
     t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "published"
+    t.integer  "published",          :default => 0
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"
@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
   create_table "event_galleries", :force => true do |t|
     t.integer  "event_id"
     t.string   "title"
-    t.integer  "published"
+    t.integer  "published",          :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -79,15 +79,15 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.integer  "published"
+    t.integer  "published",          :default => 0
   end
 
   create_table "events", :force => true do |t|
     t.string   "title"
-    t.string   "description"
+    t.text     "description",        :limit => 255
     t.datetime "date_start"
     t.datetime "date_end"
-    t.integer  "published"
+    t.integer  "published",                         :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -99,7 +99,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
   create_table "headers", :force => true do |t|
     t.string   "title"
     t.integer  "dynamic_page_id"
-    t.integer  "published"
+    t.integer  "published",          :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -119,7 +119,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.integer  "published"
+    t.integer  "published",          :default => 0
   end
 
   create_table "newsletters", :force => true do |t|
@@ -131,7 +131,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
   create_table "notice_images", :force => true do |t|
     t.string   "title"
     t.string   "legend"
-    t.integer  "published"
+    t.integer  "published",          :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -145,7 +145,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
     t.string   "title"
     t.text     "body"
     t.string   "summary"
-    t.integer  "published"
+    t.integer  "published",          :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -154,11 +154,19 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
     t.datetime "image_updated_at"
   end
 
+  create_table "partners", :force => true do |t|
+    t.string   "email"
+    t.string   "password"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "published"
+  end
+
   create_table "product_images", :force => true do |t|
     t.integer  "product_id"
     t.string   "title"
     t.string   "legend"
-    t.integer  "published"
+    t.integer  "published",          :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -170,7 +178,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
   create_table "products", :force => true do |t|
     t.integer  "category_id"
     t.string   "title"
-    t.integer  "published"
+    t.integer  "published",          :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "description"
@@ -211,7 +219,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
 
   create_table "sections", :force => true do |t|
     t.string   "title"
-    t.integer  "published"
+    t.integer  "published",  :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end

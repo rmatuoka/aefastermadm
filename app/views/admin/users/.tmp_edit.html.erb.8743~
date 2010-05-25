@@ -2,7 +2,7 @@
 		administração > <a href="<%=admin_users_path%>">usuários</a>
 	</div>
 	<div id="Content">
-		<span class="Titulo">Novo Usuário</span>
+		<span class="Titulo">Editar Usuário</span>
 		<div class="Linha"></div>
 		<div class="Toolbar">
 			<li class="Add"><%= link_to "Novo" , new_admin_user_path%></li>
@@ -10,10 +10,7 @@
 		</div>
 		
 		<div id="Grid">
-			<%=render :partial => "form" %>
+			<%=render :partial => "form"%>
 		</div>
 		<div class="Linha"></div>
 	</div>
-
-
-

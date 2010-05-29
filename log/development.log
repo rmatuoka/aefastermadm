@@ -55585,3 +55585,230 @@ ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:
   -e:2
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (50.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (55.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (58.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (66.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSections (20100503135504)
+Migrating to CreateCategories (20100503135540)
+Migrating to CreateProducts (20100503135634)
+Migrating to CreateProductImages (20100503135821)
+Migrating to AddAttachmentsImageToProductImage (20100503141917)
+Migrating to CreateUsers (20100503145203)
+Migrating to CreateEvents (20100503165713)
+Migrating to CreateEventGalleries (20100503171036)
+Migrating to CreateEventGalleryImages (20100503225753)
+Migrating to AddAttachmentsImageToEventGalleryImage (20100503230316)
+Migrating to CreateNotices (20100503231439)
+Migrating to CreateNoticeImages (20100503232033)
+Migrating to AddAttachmentsImageToNoticeImage (20100503232117)
+Migrating to CreateDynamicPages (20100503232549)
+Migrating to CreateHeaders (20100503232648)
+Migrating to AddAttachmentsImageToHeader (20100503232752)
+Migrating to CreateHighlights (20100503232933)
+Migrating to AddAttachmentsImageToHighlight (20100503233012)
+Migrating to AddNoticeIdToNotices (20100505163134)
+Migrating to AddPublishedToDynamicPage (20100505173445)
+Migrating to AddPublishedToHighlight (20100505173857)
+Migrating to AddPublishedToEventGalleryImage (20100505185443)
+Migrating to CreateSitecontacts (20100506141702)
+Migrating to CreateNewsletters (20100506141921)
+Migrating to CreateCases (20100506151318)
+Migrating to AddAttachmentsImageToCase (20100506151328)
+Migrating to CreateCaseImages (20100506151405)
+Migrating to AddAttachmentsImageToCaseImage (20100506151412)
+Migrating to AddLegendToCaseImage (20100506171838)
+Migrating to CreateScheduleVisits (20100506173842)
+Migrating to CreateRequestCatalogs (20100507134559)
+Migrating to AddAttachmentsImageToEvent (20100509205248)
+Migrating to AddAttachmentsImageToDynamicPage (20100509205338)
+Migrating to AddLegendToDynamicPage (20100509205416)
+Migrating to AddAttachmentsImageToNotice (20100509205523)
+Migrating to AddAttachmentsImageToEventGallery (20100510141443)
+Migrating to AddDescriptionToProduct (20100511211126)
+Migrating to AddAttachmentsPdfToProduct (20100512005154)
+Migrating to AddAttachmentsVideoToProduct (20100512010612)
+Migrating to CreatePartners (20100525025627)
+Migrating to AddPublishedToPartner (20100525032143)
+Migrating to AddCategoryToCase (20100529164318)
+  [4;36;1mSQL (54.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (64.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (60.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (61.4ms)[0m   [0mSHOW FIELDS FROM `case_images`[0m
+  [4;36;1mSQL (61.5ms)[0m   [0;1mdescribe `case_images`[0m
+  [4;35;1mSQL (63.4ms)[0m   [0mSHOW KEYS FROM `case_images`[0m
+  [4;36;1mSQL (64.6ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mSQL (66.1ms)[0m   [0mdescribe `cases`[0m
+  [4;36;1mSQL (62.9ms)[0m   [0;1mSHOW KEYS FROM `cases`[0m
+  [4;35;1mSQL (56.2ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (65.1ms)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (73.4ms)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (73.5ms)[0m   [0;1mSHOW FIELDS FROM `dynamic_pages`[0m
+  [4;35;1mSQL (79.5ms)[0m   [0mdescribe `dynamic_pages`[0m
+  [4;36;1mSQL (58.4ms)[0m   [0;1mSHOW KEYS FROM `dynamic_pages`[0m
+  [4;35;1mSQL (60.0ms)[0m   [0mSHOW FIELDS FROM `event_galleries`[0m
+  [4;36;1mSQL (61.2ms)[0m   [0;1mdescribe `event_galleries`[0m
+  [4;35;1mSQL (61.7ms)[0m   [0mSHOW KEYS FROM `event_galleries`[0m
+  [4;36;1mSQL (63.4ms)[0m   [0;1mSHOW FIELDS FROM `event_gallery_images`[0m
+  [4;35;1mSQL (60.5ms)[0m   [0mdescribe `event_gallery_images`[0m
+  [4;36;1mSQL (62.6ms)[0m   [0;1mSHOW KEYS FROM `event_gallery_images`[0m
+  [4;35;1mSQL (60.9ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mSQL (62.2ms)[0m   [0;1mdescribe `events`[0m
+  [4;35;1mSQL (70.6ms)[0m   [0mSHOW KEYS FROM `events`[0m
+  [4;36;1mSQL (81.8ms)[0m   [0;1mSHOW FIELDS FROM `headers`[0m
+  [4;35;1mSQL (78.7ms)[0m   [0mdescribe `headers`[0m
+  [4;36;1mSQL (59.0ms)[0m   [0;1mSHOW KEYS FROM `headers`[0m
+  [4;35;1mSQL (59.3ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mSQL (71.6ms)[0m   [0;1mdescribe `highlights`[0m
+  [4;35;1mSQL (83.3ms)[0m   [0mSHOW KEYS FROM `highlights`[0m
+  [4;36;1mSQL (59.0ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+  [4;35;1mSQL (61.1ms)[0m   [0mdescribe `newsletters`[0m
+  [4;36;1mSQL (59.9ms)[0m   [0;1mSHOW KEYS FROM `newsletters`[0m
+  [4;35;1mSQL (61.1ms)[0m   [0mSHOW FIELDS FROM `notice_images`[0m
+  [4;36;1mSQL (61.7ms)[0m   [0;1mdescribe `notice_images`[0m
+  [4;35;1mSQL (73.0ms)[0m   [0mSHOW KEYS FROM `notice_images`[0m
+  [4;36;1mSQL (88.8ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mSQL (62.1ms)[0m   [0mdescribe `notices`[0m
+  [4;36;1mSQL (62.7ms)[0m   [0;1mSHOW KEYS FROM `notices`[0m
+  [4;35;1mSQL (58.1ms)[0m   [0mSHOW FIELDS FROM `partners`[0m
+  [4;36;1mSQL (60.2ms)[0m   [0;1mdescribe `partners`[0m
+  [4;35;1mSQL (99.2ms)[0m   [0mSHOW KEYS FROM `partners`[0m
+  [4;36;1mSQL (64.4ms)[0m   [0;1mSHOW FIELDS FROM `product_images`[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mdescribe `product_images`[0m
+  [4;36;1mSQL (63.9ms)[0m   [0;1mSHOW KEYS FROM `product_images`[0m
+  [4;35;1mSQL (63.5ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (71.1ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (68.4ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (61.1ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mSQL (73.3ms)[0m   [0mdescribe `request_catalogs`[0m
+  [4;36;1mSQL (64.5ms)[0m   [0;1mSHOW KEYS FROM `request_catalogs`[0m
+  [4;35;1mSQL (61.0ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mSQL (59.5ms)[0m   [0;1mdescribe `schedule_visits`[0m
+  [4;35;1mSQL (74.3ms)[0m   [0mSHOW KEYS FROM `schedule_visits`[0m
+  [4;36;1mSQL (64.9ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSQL (56.2ms)[0m   [0mdescribe `sections`[0m
+  [4;36;1mSQL (61.7ms)[0m   [0;1mSHOW KEYS FROM `sections`[0m
+  [4;35;1mSQL (58.7ms)[0m   [0mSHOW FIELDS FROM `sitecontacts`[0m
+  [4;36;1mSQL (59.1ms)[0m   [0;1mdescribe `sitecontacts`[0m
+  [4;35;1mSQL (65.4ms)[0m   [0mSHOW KEYS FROM `sitecontacts`[0m
+  [4;36;1mSQL (60.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (58.9ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (67.7ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (56.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (48.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CasesController#edit (for ::1 at 2010-05-29 18:56:21) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mCase Columns (78.3ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mCase Load (143.2ms)[0m   [0mSELECT * FROM `cases` WHERE (`cases`.`id` = 2) [0m
+Rendering template within layouts/admin
+Rendering admin/cases/edit
+Rendered admin/cases/_form (8.8ms)
+Completed in 245ms (View: 14, DB: 327) | 200 OK [http://localhost/admin/cases/2/edit]
+  [4;36;1mSQL (52.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (50.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for ::1 at 2010-05-29 18:56:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (58.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (52.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CasesController#update (for ::1 at 2010-05-29 18:56:28) [PUT]
+  Parameters: {"authenticity_token"=>"SZ/6nUG2i8B+Pp/E2IRE1oTn3Fa3+pxQNWZzLMlP0wo=", "id"=>"2", "case"=>{"category"=>"Clubes e Academias", "body"=>"<div id=\"lipsum\">\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur  fringilla velit semper arcu fringilla egestas. Pellentesque felis ante,  tincidunt id sollicitudin et, volutpat in nisi. Etiam eu sapien diam.  Maecenas vestibulum, orci non ullamcorper elementum, libero erat  porttitor libero, vitae ullamcorper est tortor id sapien. Mauris euismod  risus odio, non condimentum leo. Nulla posuere, odio eget pretium  tincidunt, urna orci placerat est, ac tristique dolor nisl semper erat.  Mauris interdum fermentum laoreet. In laoreet rhoncus metus.  Pellentesque sem nulla, molestie quis laoreet quis, pellentesque eget  eros. Fusce in leo nec dolor porttitor gravida. Fusce nec elit metus.  Nulla et urna urna.</p>\r\n<p>Integer a lacus erat. Vestibulum vitae ullamcorper tellus. Curabitur  facilisis interdum rutrum. Suspendisse vitae tortor lacus. Suspendisse  potenti. Etiam ultricies varius volutpat. Lorem ipsum dolor sit amet,  consectetur adipiscing elit. Vestibulum laoreet sollicitudin mauris, vel  luctus dui gravida sed. Nullam nisl massa, elementum eget pellentesque  sed, venenatis sed magna. In venenatis, velit eu pharetra suscipit,  tellus risus viverra diam, a ornare ipsum sapien et metus. Pellentesque  laoreet euismod justo placerat bibendum. Nullam elementum congue odio  non aliquet. Morbi cursus gravida mi id posuere. Curabitur leo urna,  tincidunt adipiscing porttitor ac, porta porttitor dolor. Integer metus  est, tempor sit amet ornare id, tristique id massa. Sed ullamcorper  libero vel ante scelerisque et dapibus nibh eleifend.</p>\r\n<p>Donec accumsan arcu sit amet nunc rutrum mattis. Nulla nisl enim, ornare  non dictum et, lacinia non tortor. Praesent malesuada sem eu turpis  pharetra ut congue enim ultricies. Sed a convallis orci. In porta  laoreet est eget cursus. Fusce vitae dictum felis. Praesent quis lacus  sit amet augue bibendum imperdiet. In vestibulum nisi molestie neque  bibendum a fringilla nisi ullamcorper. Vivamus faucibus blandit rhoncus.  Aliquam erat volutpat. Suspendisse iaculis pretium tempus. Donec  gravida orci sit amet massa tincidunt vitae tristique est semper. Donec  feugiat, est vitae scelerisque varius, elit neque egestas est, in dictum  odio lectus sit amet augue. Curabitur vitae urna neque, iaculis lacinia  odio. Cras tincidunt lacus ut mi ultricies ultrices. Aliquam gravida  nisi at quam accumsan auctor. Nam sit amet enim quis enim rhoncus  dignissim.</p>\r\n<p>Sed ac tellus sit amet sapien semper vestibulum vitae in ipsum. Nulla  ultricies condimentum mi eu interdum. Cras luctus elit in arcu semper  volutpat. Sed nunc urna, dapibus eu varius at, luctus sed magna.  Curabitur a vehicula diam. Sed id arcu nisl. Cras vestibulum congue  molestie. Fusce quis nisi nisi, eget vulputate metus. Aenean nec luctus  augue. Proin adipiscing feugiat sem, sit amet tincidunt purus bibendum  vitae. Phasellus suscipit nisi quis ipsum convallis pharetra. Nunc non  neque ligula, nec pretium mi. Duis ultrices mollis tincidunt.</p>\r\n<p>Nullam vel nisl vel diam fermentum fringilla at eu metus. Nullam  elementum consectetur magna vel volutpat. Aenean a urna quam. Cras  lobortis, lacus ac aliquam pulvinar, odio diam porta dolor, ornare  interdum metus augue pellentesque enim. Nunc pulvinar erat sit amet urna  pulvinar eu placerat justo blandit. Donec interdum fringilla metus,  laoreet accumsan mauris laoreet dignissim. In faucibus luctus tempor.  Nulla facilisi. Duis mollis nisl quis ante pellentesque in elementum  nibh mollis. Phasellus lacus turpis, vulputate eget facilisis nec,  luctus ut ante. Cum sociis natoque penatibus et magnis dis parturient  montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique  senectus et netus et malesuada fames ac turpis egestas.</p>\r\n</div>", "title"=>"Cliente 1", "published"=>"1", "sumary"=>"Conheça o nosso trabalho. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam."}}
+  [4;36;1mCase Columns (65.6ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mCase Load (144.1ms)[0m   [0mSELECT * FROM `cases` WHERE (`cases`.`id` = 2) [0m
+  [4;36;1mSQL (58.7ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCase Update (51.8ms)[0m   [0mUPDATE `cases` SET `updated_at` = '2010-05-29 21:56:28', `category` = 'Clubes e Academias' WHERE `id` = 2[0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (53.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3001/admin/cases
+Completed in 393ms (DB: 485) | 302 Found [http://localhost/admin/cases/2]
+  [4;35;1mSQL (54.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (50.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CasesController#index (for ::1 at 2010-05-29 18:56:29) [GET]
+  [4;35;1mCase Load (217.7ms)[0m   [0mSELECT * FROM `cases` [0m
+Rendering template within layouts/admin
+Rendering admin/cases/index
+Rendered layouts/_admhelp (0.1ms)
+  [4;36;1mCase Columns (64.6ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+Completed in 303ms (View: 12, DB: 387) | 200 OK [http://localhost/admin/cases]
+  [4;35;1mSQL (51.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (73.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for ::1 at 2010-05-29 18:56:30) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (49.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (61.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CasesController#edit (for ::1 at 2010-05-29 18:56:32) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mCase Columns (64.7ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mCase Load (148.0ms)[0m   [0;1mSELECT * FROM `cases` WHERE (`cases`.`id` = 3) [0m
+Rendering template within layouts/admin
+Rendering admin/cases/edit
+Rendered admin/cases/_form (9.4ms)
+Completed in 235ms (View: 13, DB: 324) | 200 OK [http://localhost/admin/cases/3/edit]
+  [4;35;1mSQL (52.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (68.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for ::1 at 2010-05-29 18:56:33) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (52.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CasesController#update (for ::1 at 2010-05-29 18:56:43) [PUT]
+  Parameters: {"authenticity_token"=>"SZ/6nUG2i8B+Pp/E2IRE1oTn3Fa3+pxQNWZzLMlP0wo=", "id"=>"3", "case"=>{"category"=>"Clubes e Academias", "body"=>"<div id=\"lipsum\">\r\n<div id=\"lipsum\">\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur  fringilla velit semper arcu fringilla egestas. Pellentesque felis ante,  tincidunt id sollicitudin et, volutpat in nisi. Etiam eu sapien diam.  Maecenas vestibulum, orci non ullamcorper elementum, libero erat  porttitor libero, vitae ullamcorper est tortor id sapien. Mauris euismod  risus odio, non condimentum leo. Nulla posuere, odio eget pretium  tincidunt, urna orci placerat est, ac tristique dolor nisl semper erat.  Mauris interdum fermentum laoreet. In laoreet rhoncus metus.  Pellentesque sem nulla, molestie quis laoreet quis, pellentesque eget  eros. Fusce in leo nec dolor porttitor gravida. Fusce nec elit metus.  Nulla et urna urna.</p>\r\n<p>Integer a lacus erat. Vestibulum vitae ullamcorper tellus. Curabitur  facilisis interdum rutrum. Suspendisse vitae tortor lacus. Suspendisse  potenti. Etiam ultricies varius volutpat. Lorem ipsum dolor sit amet,  consectetur adipiscing elit. Vestibulum laoreet sollicitudin mauris, vel  luctus dui gravida sed. Nullam nisl massa, elementum eget pellentesque  sed, venenatis sed magna. In venenatis, velit eu pharetra suscipit,  tellus risus viverra diam, a ornare ipsum sapien et metus. Pellentesque  laoreet euismod justo placerat bibendum. Nullam elementum congue odio  non aliquet. Morbi cursus gravida mi id posuere. Curabitur leo urna,  tincidunt adipiscing porttitor ac, porta porttitor dolor. Integer metus  est, tempor sit amet ornare id, tristique id massa. Sed ullamcorper  libero vel ante scelerisque et dapibus nibh eleifend.</p>\r\n<p>Donec accumsan arcu sit amet nunc rutrum mattis. Nulla nisl enim, ornare  non dictum et, lacinia non tortor. Praesent malesuada sem eu turpis  pharetra ut congue enim ultricies. Sed a convallis orci. In porta  laoreet est eget cursus. Fusce vitae dictum felis. Praesent quis lacus  sit amet augue bibendum imperdiet. In vestibulum nisi molestie neque  bibendum a fringilla nisi ullamcorper. Vivamus faucibus blandit rhoncus.  Aliquam erat volutpat. Suspendisse iaculis pretium tempus. Donec  gravida orci sit amet massa tincidunt vitae tristique est semper. Donec  feugiat, est vitae scelerisque varius, elit neque egestas est, in dictum  odio lectus sit amet augue. Curabitur vitae urna neque, iaculis lacinia  odio. Cras tincidunt lacus ut mi ultricies ultrices. Aliquam gravida  nisi at quam accumsan auctor. Nam sit amet enim quis enim rhoncus  dignissim.</p>\r\n<p>Sed ac tellus sit amet sapien semper vestibulum vitae in ipsum. Nulla  ultricies condimentum mi eu interdum. Cras luctus elit in arcu semper  volutpat. Sed nunc urna, dapibus eu varius at, luctus sed magna.  Curabitur a vehicula diam. Sed id arcu nisl. Cras vestibulum congue  molestie. Fusce quis nisi nisi, eget vulputate metus. Aenean nec luctus  augue. Proin adipiscing feugiat sem, sit amet tincidunt purus bibendum  vitae. Phasellus suscipit nisi quis ipsum convallis pharetra. Nunc non  neque ligula, nec pretium mi. Duis ultrices mollis tincidunt.</p>\r\n<p>Nullam vel nisl vel diam fermentum fringilla at eu metus. Nullam  elementum consectetur magna vel volutpat. Aenean a urna quam. Cras  lobortis, lacus ac aliquam pulvinar, odio diam porta dolor, ornare  interdum metus augue pellentesque enim. Nunc pulvinar erat sit amet urna  pulvinar eu placerat justo blandit. Donec interdum fringilla metus,  laoreet accumsan mauris laoreet dignissim. In faucibus luctus tempor.  Nulla facilisi. Duis mollis nisl quis ante pellentesque in elementum  nibh mollis. Phasellus lacus turpis, vulputate eget facilisis nec,  luctus ut ante. Cum sociis natoque penatibus et magnis dis parturient  montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique  senectus et netus et malesuada fames ac turpis egestas.</p>\r\n</div>\r\n</div>", "title"=>"Cliente 2", "published"=>"1", "sumary"=>"Conheça o nosso trabalho. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam. "}}
+  [4;35;1mCase Columns (73.4ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+  [4;36;1mCase Load (142.3ms)[0m   [0;1mSELECT * FROM `cases` WHERE (`cases`.`id` = 3) [0m
+  [4;35;1mSQL (75.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mCase Update (51.3ms)[0m   [0;1mUPDATE `cases` SET `updated_at` = '2010-05-29 21:56:43', `category` = 'Clubes e Academias' WHERE `id` = 3[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (63.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3001/admin/cases
+Completed in 501ms (DB: 510) | 302 Found [http://localhost/admin/cases/3]
+  [4;36;1mSQL (51.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (51.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CasesController#index (for ::1 at 2010-05-29 18:56:44) [GET]
+  [4;36;1mCase Load (223.2ms)[0m   [0;1mSELECT * FROM `cases` [0m
+Rendering template within layouts/admin
+Rendering admin/cases/index
+Rendered layouts/_admhelp (0.1ms)
+  [4;35;1mCase Columns (68.8ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+Completed in 314ms (View: 14, DB: 395) | 200 OK [http://localhost/admin/cases]
+  [4;36;1mSQL (50.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (56.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for ::1 at 2010-05-29 18:56:45) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)

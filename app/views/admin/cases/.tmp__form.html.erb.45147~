@@ -13,7 +13,7 @@
 	
 	<label>
 			Categoria:<br>
-			<%=f.select :category,([["Residenciais","Residenciais"],["Hoteis e Moteis","Hoteis e Moteis"],["Clubes e Academias","Clubes e Academias"],["Hospitais","Hospitais"]])%>
+			<%=f.select :category,([["Residenciais","Residenciais"],["Hoteis/Moteis","Hotéeis/Moteis"],["Clubes e Academias","Clubes e Academias"],["Hospitais","Hospitais"]])%>
 		</label><br><br>
 	
 	<label>

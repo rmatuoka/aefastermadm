@@ -12,6 +12,11 @@
 	</label><br><br>
 	
 	<label>
+			Categoria:<br>
+			<%=f.select :category,([["Residenciais","Residenciais"],["Hoteis/Moteis","Hotéeis/Moteis"],["Clubes e Academias","Clubes e Academias"],["Hospitais","Hospitais"]])%>
+		</label><br><br>
+	
+	<label>
 		Resumo (Home):<br>
 		<%=f.text_field :sumary %><br>
 	</label><br><br>

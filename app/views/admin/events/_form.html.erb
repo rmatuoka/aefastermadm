@@ -4,7 +4,7 @@
 </div>
 <% end %>
 
-<% form_for([:admin, @Event]) do |f| %>
+<% form_for([:admin, @Event], :html => { :multipart => :true }) do |f| %>
 	<%=f.error_messages%>
 	<label>
 		Nome:<br>

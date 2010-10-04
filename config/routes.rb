@@ -56,6 +56,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :cases,           :has_many => :case_images
     admin.resources :schedule_visits
     admin.resources :partners
+    admin.resources :testimonials
     admin.resources :home, :singular => :home_item
   end
   

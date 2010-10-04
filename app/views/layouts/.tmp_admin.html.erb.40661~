@@ -44,6 +44,9 @@ $(document).ready(function(){
 	</div>
 	
 	<div id="Menu">
+			<li class="MenuItem Home">
+				<a href="<%=admin_home_path%>">home</a>
+			</li>
 			
 			<li class="MenuItem Usuarios">
 				<a href="<%=admin_users_path%>">usuários</a>
@@ -90,7 +93,7 @@ $(document).ready(function(){
 			</li>
 			
 			<li class="MenuItem Usuarios">
-				<a href="<%=admin_testimonials_path%>">dep.</a>
+				<a href="<%=admin_testimonials_path%>">depoimentos</a>
 			</li>
 
 

@@ -56088,3 +56088,1335 @@ ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:
   -e:2
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSections (20100503135504)
+Migrating to CreateCategories (20100503135540)
+Migrating to CreateProducts (20100503135634)
+Migrating to CreateProductImages (20100503135821)
+Migrating to AddAttachmentsImageToProductImage (20100503141917)
+Migrating to CreateUsers (20100503145203)
+Migrating to CreateEvents (20100503165713)
+Migrating to CreateEventGalleries (20100503171036)
+Migrating to CreateEventGalleryImages (20100503225753)
+Migrating to AddAttachmentsImageToEventGalleryImage (20100503230316)
+Migrating to CreateNotices (20100503231439)
+Migrating to CreateNoticeImages (20100503232033)
+Migrating to AddAttachmentsImageToNoticeImage (20100503232117)
+Migrating to CreateDynamicPages (20100503232549)
+Migrating to CreateHeaders (20100503232648)
+Migrating to AddAttachmentsImageToHeader (20100503232752)
+Migrating to CreateHighlights (20100503232933)
+Migrating to AddAttachmentsImageToHighlight (20100503233012)
+Migrating to AddNoticeIdToNotices (20100505163134)
+Migrating to AddPublishedToDynamicPage (20100505173445)
+Migrating to AddPublishedToHighlight (20100505173857)
+Migrating to AddPublishedToEventGalleryImage (20100505185443)
+Migrating to CreateSitecontacts (20100506141702)
+Migrating to CreateNewsletters (20100506141921)
+Migrating to CreateCases (20100506151318)
+Migrating to AddAttachmentsImageToCase (20100506151328)
+Migrating to CreateCaseImages (20100506151405)
+Migrating to AddAttachmentsImageToCaseImage (20100506151412)
+Migrating to AddLegendToCaseImage (20100506171838)
+Migrating to CreateScheduleVisits (20100506173842)
+Migrating to CreateRequestCatalogs (20100507134559)
+Migrating to AddAttachmentsImageToEvent (20100509205248)
+Migrating to AddAttachmentsImageToDynamicPage (20100509205338)
+Migrating to AddLegendToDynamicPage (20100509205416)
+Migrating to AddAttachmentsImageToNotice (20100509205523)
+Migrating to AddAttachmentsImageToEventGallery (20100510141443)
+Migrating to AddDescriptionToProduct (20100511211126)
+Migrating to AddAttachmentsPdfToProduct (20100512005154)
+Migrating to AddAttachmentsVideoToProduct (20100512010612)
+Migrating to CreatePartners (20100525025627)
+Migrating to AddPublishedToPartner (20100525032143)
+Migrating to AddCategoryToCase (20100529164318)
+Migrating to CreateTestimonials (20101004143049)
+  [4;36;1mSQL (10.0ms)[0m   [0;1mCREATE TABLE `testimonials` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `position` varchar(255), `company` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101004143049')[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `case_images`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `case_images`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `case_images`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `cases`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `cases`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `dynamic_pages`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `dynamic_pages`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `dynamic_pages`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `event_galleries`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `event_galleries`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `event_galleries`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `event_gallery_images`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `event_gallery_images`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `event_gallery_images`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `events`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `events`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `headers`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `headers`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `headers`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `highlights`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `highlights`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `newsletters`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `newsletters`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `notice_images`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `notice_images`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `notice_images`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `notices`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `notices`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `partners`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `partners`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `partners`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `product_images`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `product_images`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `product_images`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `request_catalogs`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `request_catalogs`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `schedule_visits`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `schedule_visits`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `sections`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `sections`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `sitecontacts`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `sitecontacts`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `sitecontacts`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `testimonials`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `testimonials`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::HomeController#index (for 127.0.0.1 at 2010-10-04 12:40:45) [GET]
+Redirected to http://localhost:3005/admin/sessions/new
+Filter chain halted as [:autentica] rendered_or_redirected.
+Completed in 2380ms (DB: 10) | 302 Found [http://localhost/]
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::SessionsController#new (for 127.0.0.1 at 2010-10-04 12:40:50) [GET]
+Rendering template within layouts/admin
+Rendering admin/sessions/new
+Rendered layouts/_admhelp (0.0ms)
+Completed in 130ms (View: 130, DB: 10) | 200 OK [http://localhost/admin/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 12:40:55) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::SessionsController#show (for 127.0.0.1 at 2010-10-04 12:41:31) [GET]
+  Parameters: {"id"=>"testimonial"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create and destroy):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::HomeController#index (for 127.0.0.1 at 2010-10-04 16:29:24) [GET]
+Redirected to http://localhost:3005/admin/sessions/new
+Filter chain halted as [:autentica] rendered_or_redirected.
+Completed in 20ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::SessionsController#new (for 127.0.0.1 at 2010-10-04 16:29:26) [GET]
+Rendering template within layouts/admin
+Rendering admin/sessions/new
+Rendered layouts/_admhelp (10.0ms)
+Completed in 150ms (View: 150, DB: 10) | 200 OK [http://localhost/admin/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:29:31) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::SessionsController#create (for 127.0.0.1 at 2010-10-04 16:30:08) [POST]
+  Parameters: {"authenticity_token"=>"TCP2SU0jAK87sWKRmrY+5I/h56wcyAeaKM/P9z4sdnE=", "email"=>"rmatuoka@agenciaeconomica.com.br", "senha"=>"123"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email = 'rmatuoka@agenciaeconomica.com.br' AND password = '123') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/sessions/new
+Rendered layouts/_admhelp (0.0ms)
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://localhost/admin/sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:30:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::SessionsController#create (for 127.0.0.1 at 2010-10-04 16:30:20) [POST]
+  Parameters: {"authenticity_token"=>"TCP2SU0jAK87sWKRmrY+5I/h56wcyAeaKM/P9z4sdnE=", "email"=>"rmatuoka@agenciaeconomica.com.br", "senha"=>"1234"}
+  [4;35;1mUser Load (10.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = 'rmatuoka@agenciaeconomica.com.br' AND password = '1234') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering admin/sessions/new
+Rendered layouts/_admhelp (0.0ms)
+Completed in 20ms (View: 0, DB: 20) | 200 OK [http://localhost/admin/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:30:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::SessionsController#create (for 127.0.0.1 at 2010-10-04 16:30:28) [POST]
+  Parameters: {"authenticity_token"=>"TCP2SU0jAK87sWKRmrY+5I/h56wcyAeaKM/P9z4sdnE=", "email"=>"rmatuoka@agenciaeconomica.com.br", "senha"=>"12345"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email = 'rmatuoka@agenciaeconomica.com.br' AND password = '12345') LIMIT 1[0m
+  [4;35;1mUser Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3005/admin/sections
+Completed in 20ms (DB: 10) | 302 Found [http://localhost/admin/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::SectionsController#index (for 127.0.0.1 at 2010-10-04 16:30:30) [GET]
+  [4;36;1mSection Load (0.0ms)[0m   [0;1mSELECT * FROM `sections` [0m
+Rendering template within layouts/admin
+Rendering admin/sections/index
+Rendered layouts/_admhelp (0.0ms)
+  [4;35;1mSection Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `sections`[0m
+Completed in 180ms (View: 120, DB: 20) | 200 OK [http://localhost/admin/sections]
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:30:33) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:30:53) [GET]
+
+ActionController::RoutingError (No route matches "/admin/testmonials" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:32:03) [GET]
+
+ActionController::RoutingError (No route matches "/admin/testmonials" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:32:23) [GET]
+
+ActionController::RoutingError (No route matches "/admin/testmonials" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:32:32) [GET]
+
+NameError (uninitialized constant Admin::TestimonialsController):
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:33:29) [GET]
+
+NameError (uninitialized constant Admin::TestimonialsController):
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (30.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:34:00) [GET]
+
+NameError (uninitialized constant Admin::TestimonialsController):
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:34:26) [GET]
+
+NameError (uninitialized constant Admin::TestimonialsController):
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:34:27) [GET]
+
+NameError (uninitialized constant Admin::TestimonialsController):
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (60.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:36:31) [GET]
+
+NameError (uninitialized constant Admin::TestimonialsController):
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:38:19) [GET]
+
+NameError (uninitialized constant Admin::TestimonialsController):
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:38:32) [GET]
+
+NameError (uninitialized constant Admin::TestimonialsController):
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:39:38) [GET]
+
+NameError (uninitialized constant Admin::TestimonialsController):
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:40:59) [GET]
+
+NameError (uninitialized constant Admin::TestimonialsController):
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (100.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:42:02) [GET]
+
+NameError (uninitialized constant Admin::TestimonialsController):
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (10.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:42:23) [GET]
+
+NameError (uninitialized constant Admin::TestimonialsController):
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (100.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:42:31) [GET]
+
+NameError (uninitialized constant Admin::TestimonialsController):
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:42:54) [GET]
+
+NameError (uninitialized constant Admin::TestimonialsController):
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:43:10) [GET]
+
+NameError (uninitialized constant Admin::TestimonialsController):
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (30.0ms)
+Rendered rescues/_request_and_response (10.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:43:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CasesController#index (for 127.0.0.1 at 2010-10-04 16:43:36) [GET]
+  [4;36;1mCase Load (10.0ms)[0m   [0;1mSELECT * FROM `cases` [0m
+Rendering template within layouts/admin
+Rendering admin/cases/index
+Rendered layouts/_admhelp (0.0ms)
+  [4;35;1mCase Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+Completed in 130ms (View: 80, DB: 10) | 200 OK [http://localhost/admin/cases]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:43:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CasesController#index (for 127.0.0.1 at 2010-10-04 16:44:12) [GET]
+  [4;36;1mCase Load (10.0ms)[0m   [0;1mSELECT * FROM `cases` [0m
+Rendering template within layouts/admin
+Rendering admin/cases/index
+Rendered layouts/_admhelp (0.0ms)
+  [4;35;1mCase Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `cases`[0m
+Completed in 50ms (View: 10, DB: 30) | 200 OK [http://localhost/admin/cases]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:44:16) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:44:24) [GET]
+
+NameError (uninitialized constant Admin::TestimonialsController):
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (30.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:45:06) [GET]
+
+NameError (uninitialized constant Admin::TestimonialsController):
+  -e:2:in `load'
+  -e:2
+
+Rendered rescues/_trace (30.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#index (for 127.0.0.1 at 2010-10-04 16:46:57) [GET]
+  [4;36;1mTestimonial Load (0.0ms)[0m   [0;1mSELECT * FROM `testimonials` [0m
+Rendering template within layouts/admin
+Rendering admin/testimonials/index
+Rendered layouts/_admhelp (0.0ms)
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #18 of app/views/admin/testimonials/index.html.erb:
+15: 		<%= render :file  => "layouts/_admhelp.html.erb" %>
+16: 		<div id="Grid">
+17: 			<table width="100%" cellspacing="0" cellpadding="0" border="0">
+18: 			<% @Cases.each do |l| %>
+19: 			<tr class="bgCinzaC">
+20: 			<td class="Name"><li class="Bullet">
+21: 				<%
+
+    app/views/admin/testimonials/index.html.erb:18
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (10.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#show (for 127.0.0.1 at 2010-10-04 16:48:01) [GET]
+  Parameters: {"APTANA_NOCACHE_1286221679674"=>"1286221679674", "id"=>"show"}
+Redirected to http://localhost:3005/admin/sessions/new
+Filter chain halted as [:autentica] rendered_or_redirected.
+Completed in 5550ms (DB: 10) | 302 Found [http://localhost/admin/testimonials/show?APTANA_NOCACHE_1286221679674=1286221679674]
+  [4;35;1mSQL (10.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::SessionsController#new (for 127.0.0.1 at 2010-10-04 16:48:07) [GET]
+Rendering template within layouts/admin
+Rendering admin/sessions/new
+Rendered layouts/_admhelp (0.0ms)
+Completed in 20ms (View: 10, DB: 10) | 200 OK [http://localhost/admin/sessions/new]
+  [4;35;1mSQL (10.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:48:08) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#index (for 127.0.0.1 at 2010-10-04 16:50:09) [GET]
+  [4;35;1mTestimonial Load (0.0ms)[0m   [0mSELECT * FROM `testimonials` [0m
+Rendering template within layouts/admin
+Rendering admin/testimonials/index
+Rendered layouts/_admhelp (0.0ms)
+Completed in 90ms (View: 10, DB: 0) | 200 OK [http://localhost/admin/testimonials]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:50:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#index (for 127.0.0.1 at 2010-10-04 16:50:38) [GET]
+  [4;36;1mTestimonial Load (0.0ms)[0m   [0;1mSELECT * FROM `testimonials` [0m
+Rendering template within layouts/admin
+Rendering admin/testimonials/index
+Rendered layouts/_admhelp (0.0ms)
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://localhost/admin/testimonials]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#index (for 127.0.0.1 at 2010-10-04 16:50:42) [GET]
+  [4;35;1mTestimonial Load (10.0ms)[0m   [0mSELECT * FROM `testimonials` [0m
+Rendering template within layouts/admin
+Rendering admin/testimonials/index
+Rendered layouts/_admhelp (0.0ms)
+Completed in 20ms (View: 0, DB: 10) | 200 OK [http://localhost/admin/testimonials]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:50:50) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:50:54) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#index (for 127.0.0.1 at 2010-10-04 16:50:58) [GET]
+  [4;36;1mTestimonial Load (0.0ms)[0m   [0;1mSELECT * FROM `testimonials` [0m
+Rendering template within layouts/admin
+Rendering admin/testimonials/index
+Rendered layouts/_admhelp (0.0ms)
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/admin/testimonials]
+  [4;35;1mSQL (10.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:51:02) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#new (for 127.0.0.1 at 2010-10-04 16:51:12) [GET]
+  [4;35;1mTestimonial Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `testimonials`[0m
+Rendering template within layouts/admin
+Rendering admin/testimonials/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #7 of app/views/admin/testimonials/_form.html.erb:
+4: </div>
+5: <% end %>
+6: 
+7: <% form_for([:admin, @Case], :html => { :multipart => :true }) do |f| %>
+8: 	<%=f.error_messages%>
+9: 	<label>
+10: 		Nome:<br>
+
+    app/views/admin/testimonials/_form.html.erb:7
+    app/views/admin/testimonials/new.html.erb:13
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (60.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#new (for 127.0.0.1 at 2010-10-04 16:52:03) [GET]
+  [4;36;1mTestimonial Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+Rendering template within layouts/admin
+Rendering admin/testimonials/new
+
+ActionView::TemplateError (undefined method `published' for #<Testimonial:0x5ee4c38>) on line #26 of app/views/admin/testimonials/_form.html.erb:
+23: 	
+24: 	<label>
+25: 		Publicado?<br>
+26: 		<%=f.radio_button :published, 0 %> Não
+27: 		<%=f.radio_button :published, 1 %> Sim  
+28: 	</label><br><br>
+29: 	
+
+    app/views/admin/testimonials/_form.html.erb:26
+    app/views/admin/testimonials/_form.html.erb:7
+    app/views/admin/testimonials/new.html.erb:13
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (70.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSections (20100503135504)
+Migrating to CreateCategories (20100503135540)
+Migrating to CreateProducts (20100503135634)
+Migrating to CreateProductImages (20100503135821)
+Migrating to AddAttachmentsImageToProductImage (20100503141917)
+Migrating to CreateUsers (20100503145203)
+Migrating to CreateEvents (20100503165713)
+Migrating to CreateEventGalleries (20100503171036)
+Migrating to CreateEventGalleryImages (20100503225753)
+Migrating to AddAttachmentsImageToEventGalleryImage (20100503230316)
+Migrating to CreateNotices (20100503231439)
+Migrating to CreateNoticeImages (20100503232033)
+Migrating to AddAttachmentsImageToNoticeImage (20100503232117)
+Migrating to CreateDynamicPages (20100503232549)
+Migrating to CreateHeaders (20100503232648)
+Migrating to AddAttachmentsImageToHeader (20100503232752)
+Migrating to CreateHighlights (20100503232933)
+Migrating to AddAttachmentsImageToHighlight (20100503233012)
+Migrating to AddNoticeIdToNotices (20100505163134)
+Migrating to AddPublishedToDynamicPage (20100505173445)
+Migrating to AddPublishedToHighlight (20100505173857)
+Migrating to AddPublishedToEventGalleryImage (20100505185443)
+Migrating to CreateSitecontacts (20100506141702)
+Migrating to CreateNewsletters (20100506141921)
+Migrating to CreateCases (20100506151318)
+Migrating to AddAttachmentsImageToCase (20100506151328)
+Migrating to CreateCaseImages (20100506151405)
+Migrating to AddAttachmentsImageToCaseImage (20100506151412)
+Migrating to AddLegendToCaseImage (20100506171838)
+Migrating to CreateScheduleVisits (20100506173842)
+Migrating to CreateRequestCatalogs (20100507134559)
+Migrating to AddAttachmentsImageToEvent (20100509205248)
+Migrating to AddAttachmentsImageToDynamicPage (20100509205338)
+Migrating to AddLegendToDynamicPage (20100509205416)
+Migrating to AddAttachmentsImageToNotice (20100509205523)
+Migrating to AddAttachmentsImageToEventGallery (20100510141443)
+Migrating to AddDescriptionToProduct (20100511211126)
+Migrating to AddAttachmentsPdfToProduct (20100512005154)
+Migrating to AddAttachmentsVideoToProduct (20100512010612)
+Migrating to CreatePartners (20100525025627)
+Migrating to AddPublishedToPartner (20100525032143)
+Migrating to AddCategoryToCase (20100529164318)
+Migrating to CreateTestimonials (20101004143049)
+Migrating to AddPublishedToTestimonial (20101004195356)
+  [4;36;1mSQL (10.0ms)[0m   [0;1mALTER TABLE `testimonials` ADD `published` int(11)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101004195356')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `case_images`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `case_images`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `case_images`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `cases`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `cases`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `dynamic_pages`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `dynamic_pages`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `dynamic_pages`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `event_galleries`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `event_galleries`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `event_galleries`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `event_gallery_images`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `event_gallery_images`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `event_gallery_images`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `events`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `events`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `headers`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `headers`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `headers`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `highlights`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `highlights`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `newsletters`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `newsletters`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `notice_images`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `notice_images`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `notice_images`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `notices`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `notices`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `partners`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `partners`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `partners`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `product_images`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `product_images`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `product_images`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `request_catalogs`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `request_catalogs`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `schedule_visits`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `schedule_visits`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `sections`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `sections`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `sitecontacts`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `sitecontacts`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `sitecontacts`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `testimonials`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `testimonials`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#new (for 127.0.0.1 at 2010-10-04 16:54:21) [GET]
+  [4;35;1mTestimonial Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `testimonials`[0m
+Rendering template within layouts/admin
+Rendering admin/testimonials/new
+Rendered admin/testimonials/_form (10.0ms)
+Completed in 20ms (View: 10, DB: 10) | 200 OK [http://localhost/admin/testimonials/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:54:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#create (for 127.0.0.1 at 2010-10-04 16:54:44) [POST]
+  Parameters: {"authenticity_token"=>"TCP2SU0jAK87sWKRmrY+5I/h56wcyAeaKM/P9z4sdnE=", "testimonial"=>{"company"=>"teste", "position"=>"teste", "name"=>"teste", "published"=>"1"}}
+  [4;36;1mTestimonial Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTestimonial Create (0.0ms)[0m   [0;1mINSERT INTO `testimonials` (`name`, `position`, `company`, `created_at`, `updated_at`, `published`) VALUES('teste', 'teste', 'teste', '2010-10-04 19:54:44', '2010-10-04 19:54:44', 1)[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3005/admin/testimonials
+Completed in 30ms (DB: 30) | 302 Found [http://localhost/admin/testimonials]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#index (for 127.0.0.1 at 2010-10-04 16:54:46) [GET]
+  [4;36;1mTestimonial Load (10.0ms)[0m   [0;1mSELECT * FROM `testimonials` [0m
+Rendering template within layouts/admin
+Rendering admin/testimonials/index
+Rendered layouts/_admhelp (0.0ms)
+  [4;35;1mTestimonial Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `testimonials`[0m
+Completed in 30ms (View: 10, DB: 10) | 200 OK [http://localhost/admin/testimonials]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:54:49) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#show (for 127.0.0.1 at 2010-10-04 16:54:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTestimonial Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+  [4;35;1mTestimonial Load (0.0ms)[0m   [0mSELECT * FROM `testimonials` WHERE (`testimonials`.`id` = 1) [0m
+Rendering template within layouts/admin
+Rendering admin/testimonials/show
+Completed in 30ms (View: 10, DB: 0) | 200 OK [http://localhost/admin/testimonials/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:54:55) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:54:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#edit (for 127.0.0.1 at 2010-10-04 16:54:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTestimonial Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+  [4;35;1mTestimonial Load (0.0ms)[0m   [0mSELECT * FROM `testimonials` WHERE (`testimonials`.`id` = 1) [0m
+Rendering template within layouts/admin
+Rendering admin/testimonials/edit
+Rendered admin/testimonials/_form (0.0ms)
+Completed in 30ms (View: 10, DB: 0) | 200 OK [http://localhost/admin/testimonials/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:55:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#update (for 127.0.0.1 at 2010-10-04 16:55:10) [PUT]
+  Parameters: {"authenticity_token"=>"TCP2SU0jAK87sWKRmrY+5I/h56wcyAeaKM/P9z4sdnE=", "id"=>"1", "testimonial"=>{"company"=>"teste", "position"=>"teste", "name"=>"testeeee", "published"=>"1"}}
+  [4;36;1mTestimonial Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+  [4;35;1mTestimonial Load (0.0ms)[0m   [0mSELECT * FROM `testimonials` WHERE (`testimonials`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTestimonial Update (0.0ms)[0m   [0mUPDATE `testimonials` SET `updated_at` = '2010-10-04 19:55:10', `name` = 'testeeee' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3005/admin/testimonials
+Completed in 30ms (DB: 10) | 302 Found [http://localhost/admin/testimonials/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#index (for 127.0.0.1 at 2010-10-04 16:55:12) [GET]
+  [4;35;1mTestimonial Load (0.0ms)[0m   [0mSELECT * FROM `testimonials` [0m
+Rendering template within layouts/admin
+Rendering admin/testimonials/index
+Rendered layouts/_admhelp (0.0ms)
+  [4;36;1mTestimonial Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/admin/testimonials]
+  [4;35;1mSQL (10.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 16:55:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSections (20100503135504)
+Migrating to CreateCategories (20100503135540)
+Migrating to CreateProducts (20100503135634)
+Migrating to CreateProductImages (20100503135821)
+Migrating to AddAttachmentsImageToProductImage (20100503141917)
+Migrating to CreateUsers (20100503145203)
+Migrating to CreateEvents (20100503165713)
+Migrating to CreateEventGalleries (20100503171036)
+Migrating to CreateEventGalleryImages (20100503225753)
+Migrating to AddAttachmentsImageToEventGalleryImage (20100503230316)
+Migrating to CreateNotices (20100503231439)
+Migrating to CreateNoticeImages (20100503232033)
+Migrating to AddAttachmentsImageToNoticeImage (20100503232117)
+Migrating to CreateDynamicPages (20100503232549)
+Migrating to CreateHeaders (20100503232648)
+Migrating to AddAttachmentsImageToHeader (20100503232752)
+Migrating to CreateHighlights (20100503232933)
+Migrating to AddAttachmentsImageToHighlight (20100503233012)
+Migrating to AddNoticeIdToNotices (20100505163134)
+Migrating to AddPublishedToDynamicPage (20100505173445)
+Migrating to AddPublishedToHighlight (20100505173857)
+Migrating to AddPublishedToEventGalleryImage (20100505185443)
+Migrating to CreateSitecontacts (20100506141702)
+Migrating to CreateNewsletters (20100506141921)
+Migrating to CreateCases (20100506151318)
+Migrating to AddAttachmentsImageToCase (20100506151328)
+Migrating to CreateCaseImages (20100506151405)
+Migrating to AddAttachmentsImageToCaseImage (20100506151412)
+Migrating to AddLegendToCaseImage (20100506171838)
+Migrating to CreateScheduleVisits (20100506173842)
+Migrating to CreateRequestCatalogs (20100507134559)
+Migrating to AddAttachmentsImageToEvent (20100509205248)
+Migrating to AddAttachmentsImageToDynamicPage (20100509205338)
+Migrating to AddLegendToDynamicPage (20100509205416)
+Migrating to AddAttachmentsImageToNotice (20100509205523)
+Migrating to AddAttachmentsImageToEventGallery (20100510141443)
+Migrating to AddDescriptionToProduct (20100511211126)
+Migrating to AddAttachmentsPdfToProduct (20100512005154)
+Migrating to AddAttachmentsVideoToProduct (20100512010612)
+Migrating to CreatePartners (20100525025627)
+Migrating to AddPublishedToPartner (20100525032143)
+Migrating to AddCategoryToCase (20100529164318)
+Migrating to CreateTestimonials (20101004143049)
+Migrating to AddPublishedToTestimonial (20101004195356)
+Migrating to AddTestimonialToTestimonial (20101004195932)
+  [4;36;1mSQL (10.0ms)[0m   [0;1mALTER TABLE `testimonials` ADD `testimonial` text[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101004195932')[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `case_images`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `case_images`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `case_images`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `cases`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `cases`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `cases`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `dynamic_pages`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `dynamic_pages`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `dynamic_pages`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `event_galleries`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `event_galleries`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `event_galleries`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `event_gallery_images`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `event_gallery_images`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `event_gallery_images`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `events`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `events`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `events`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `headers`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `headers`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `headers`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `highlights`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `highlights`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `highlights`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `newsletters`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `newsletters`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `newsletters`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `notice_images`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `notice_images`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `notice_images`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `notices`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `notices`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW KEYS FROM `notices`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `partners`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `partners`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW KEYS FROM `partners`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `product_images`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `product_images`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `product_images`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `request_catalogs`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `request_catalogs`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `request_catalogs`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `schedule_visits`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `schedule_visits`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `schedule_visits`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `sections`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `sections`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `sitecontacts`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `sitecontacts`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `sitecontacts`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `testimonials`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `testimonials`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#index (for 127.0.0.1 at 2010-10-04 17:05:17) [GET]
+  [4;35;1mTestimonial Load (0.0ms)[0m   [0mSELECT * FROM `testimonials` [0m
+Rendering template within layouts/admin
+Rendering admin/testimonials/index
+Rendered layouts/_admhelp (0.0ms)
+  [4;36;1mTestimonial Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+Completed in 30ms (View: 10, DB: 10) | 200 OK [http://localhost/admin/testimonials]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#new (for 127.0.0.1 at 2010-10-04 17:05:17) [GET]
+  [4;35;1mTestimonial Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `testimonials`[0m
+Rendering template within layouts/admin
+Rendering admin/testimonials/new
+Rendered admin/testimonials/_form (10.0ms)
+Completed in 30ms (View: 10, DB: 10) | 200 OK [http://localhost/admin/testimonials/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 17:05:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#new (for 127.0.0.1 at 2010-10-04 17:06:13) [GET]
+  [4;36;1mTestimonial Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+Rendering template within layouts/admin
+Rendering admin/testimonials/new
+Rendered admin/testimonials/_form (10.0ms)
+Completed in 30ms (View: 10, DB: 20) | 200 OK [http://localhost/admin/testimonials/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 17:06:19) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#index (for 127.0.0.1 at 2010-10-04 17:06:52) [GET]
+  [4;35;1mTestimonial Load (0.0ms)[0m   [0mSELECT * FROM `testimonials` [0m
+Rendering template within layouts/admin
+Rendering admin/testimonials/index
+Rendered layouts/_admhelp (0.0ms)
+  [4;36;1mTestimonial Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+Completed in 30ms (View: 20, DB: 10) | 200 OK [http://localhost/admin/testimonials]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 17:06:55) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#index (for 127.0.0.1 at 2010-10-04 17:09:38) [GET]
+  [4;35;1mTestimonial Load (10.0ms)[0m   [0mSELECT * FROM `testimonials` [0m
+Rendering template within layouts/admin
+Rendering admin/testimonials/index
+Rendered layouts/_admhelp (0.0ms)
+  [4;36;1mTestimonial Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `testimonials`[0m
+Completed in 40ms (View: 20, DB: 10) | 200 OK [http://localhost/admin/testimonials]
+  [4;35;1mSQL (10.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 17:09:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (10.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#edit (for 127.0.0.1 at 2010-10-04 17:10:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTestimonial Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `testimonials`[0m
+  [4;36;1mTestimonial Load (0.0ms)[0m   [0;1mSELECT * FROM `testimonials` WHERE (`testimonials`.`id` = 1) [0m
+Rendering template within layouts/admin
+Rendering admin/testimonials/edit
+Rendered admin/testimonials/_form (10.0ms)
+Completed in 30ms (View: 10, DB: 20) | 200 OK [http://localhost/admin/testimonials/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 17:10:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 17:11:41) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#edit (for 127.0.0.1 at 2010-10-04 17:11:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTestimonial Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `testimonials`[0m
+  [4;36;1mTestimonial Load (0.0ms)[0m   [0;1mSELECT * FROM `testimonials` WHERE (`testimonials`.`id` = 1) [0m
+Rendering template within layouts/admin
+Rendering admin/testimonials/edit
+Rendered admin/testimonials/_form (10.0ms)
+Completed in 30ms (View: 10, DB: 10) | 200 OK [http://localhost/admin/testimonials/1/edit]
+  [4;35;1mSQL (10.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 17:11:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#update (for 127.0.0.1 at 2010-10-04 17:12:14) [PUT]
+  Parameters: {"authenticity_token"=>"TCP2SU0jAK87sWKRmrY+5I/h56wcyAeaKM/P9z4sdnE=", "id"=>"1", "testimonial"=>{"company"=>"teste", "position"=>"teste", "name"=>"teste", "published"=>"1", "testimonial"=>"<p>&ccedil;&ccedil;&ccedil;&ccedil;&ccedil;&ccedil;&ccedil;&ccedil;&ccedil;&ccedil;&ccedil;&ccedil;</p>"}}
+  [4;35;1mTestimonial Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `testimonials`[0m
+  [4;36;1mTestimonial Load (0.0ms)[0m   [0;1mSELECT * FROM `testimonials` WHERE (`testimonials`.`id` = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTestimonial Update (0.0ms)[0m   [0;1mUPDATE `testimonials` SET `updated_at` = '2010-10-04 20:12:14', `name` = 'teste', `testimonial` = '<p>&ccedil;&ccedil;&ccedil;&ccedil;&ccedil;&ccedil;&ccedil;&ccedil;&ccedil;&ccedil;&ccedil;&ccedil;</p>' WHERE `id` = 1[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3005/admin/testimonials
+Completed in 40ms (DB: 20) | 302 Found [http://localhost/admin/testimonials/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::TestimonialsController#index (for 127.0.0.1 at 2010-10-04 17:12:30) [GET]
+  [4;36;1mTestimonial Load (10.0ms)[0m   [0;1mSELECT * FROM `testimonials` [0m
+Rendering template within layouts/admin
+Rendering admin/testimonials/index
+Rendered layouts/_admhelp (0.0ms)
+  [4;35;1mTestimonial Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `testimonials`[0m
+Completed in 30ms (View: 10, DB: 10) | 200 OK [http://localhost/admin/testimonials]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-04 17:12:33) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
